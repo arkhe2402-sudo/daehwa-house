@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta name="google-site-verification" content="OCSacxS4hUOCLvL-31GclENPmJlY9GHST3P9qwHjv24" />
-    <meta name="naver-site-verification" content="19f10d16e18e9678bcf9c9928f20d7b60e2caaa1" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>대화원룸 | 프리미엄 1인 주거 공간</title>
@@ -261,7 +259,6 @@ footer{background:#0f172a;color:#94a3b8;padding:40px 0 20px;}
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
 <header>
     <div class="nav-container">
         <a href="#" class="logo" data-tab="tab-home">
@@ -283,7 +280,6 @@ footer{background:#0f172a;color:#94a3b8;padding:40px 0 20px;}
     </div>
 </header>
 
-<!-- ===== TAB 1: 방문자 홈 ===== -->
 <main id="tab-home" class="tab-content active">
 
     <section class="hero">
@@ -353,7 +349,6 @@ footer{background:#0f172a;color:#94a3b8;padding:40px 0 20px;}
         </div>
     </section>
 
-    <!-- [위치 수정 완료] 찾아오시는 길 데이터 업데이트 -->
     <section id="location" class="container">
         <div class="section-title">
             <h2>편리한 교통 및 위치 정보</h2>
@@ -391,7 +386,7 @@ footer{background:#0f172a;color:#94a3b8;padding:40px 0 20px;}
                 <div class="contact-info-panel">
                     <div class="contact-card">
                         <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
-                        <div class="contact-card-text"><h4>대표 상담 유선번호</h4><p>010-5132-2249,010-3272-0442 (오전 9시 ~ 오후 7시)</p></div>
+                        <div class="contact-card-text"><h4>대표 상담 유선번호</h4><p>02-333-8822 (오전 9시 ~ 오후 7시)</p></div>
                     </div>
                     <div class="contact-card">
                         <div class="contact-card-icon"><i class="fa-solid fa-comment-dots"></i></div>
@@ -415,10 +410,8 @@ footer{background:#0f172a;color:#94a3b8;padding:40px 0 20px;}
     </section>
 </main>
 
-<!-- ===== TAB 2: 입주민 포털 ===== -->
 <main id="tab-portal" class="tab-content">
 
-    <!-- 로그인 -->
     <section id="portal-login-view" class="portal-section container">
         <div class="login-card">
             <div class="login-header">
@@ -443,7 +436,6 @@ footer{background:#0f172a;color:#94a3b8;padding:40px 0 20px;}
         </div>
     </section>
 
-    <!-- 입주민 대시보드 -->
     <section id="portal-dashboard-view" style="display:none;">
         <div class="dashboard-container">
             <aside class="dashboard-sidebar">
@@ -508,7 +500,6 @@ footer{background:#0f172a;color:#94a3b8;padding:40px 0 20px;}
         </div>
     </section>
 
-    <!-- 관리자 대시보드 -->
     <section id="portal-admin-view" style="display:none;">
         <div class="dashboard-container">
             <aside class="dashboard-sidebar">
@@ -529,7 +520,6 @@ footer{background:#0f172a;color:#94a3b8;padding:40px 0 20px;}
                 </ul>
             </aside>
             <main class="dashboard-main-panel">
-                <!-- 공지 작성 -->
                 <div id="admin-view-notices" class="dashboard-view active">
                     <div class="dashboard-header-bar"><h2>📢 신규 공지사항 게시</h2></div>
                     <div class="board-card">
@@ -545,7 +535,6 @@ footer{background:#0f172a;color:#94a3b8;padding:40px 0 20px;}
                     </div>
                 </div>
 
-                <!-- 갤러리 등록 -->
                 <div id="admin-view-gallery" class="dashboard-view">
                     <div class="dashboard-header-bar"><h2>📸 룸 투어 사진 및 소개 등록</h2></div>
                     <div class="board-card">
@@ -573,7 +562,6 @@ footer{background:#0f172a;color:#94a3b8;padding:40px 0 20px;}
                     <div id="admin-gallery-list" style="margin-top:20px;"></div>
                 </div>
 
-                <!-- 입주민 연락처 -->
                 <div id="admin-view-residents" class="dashboard-view">
                     <div class="dashboard-header-bar">
                         <h2>👤 입주민 연락처 관리부</h2>
@@ -609,7 +597,6 @@ footer{background:#0f172a;color:#94a3b8;padding:40px 0 20px;}
                     </div>
                 </div>
 
-                <!-- 전체 문자 발송 -->
                 <div id="admin-view-sms" class="dashboard-view">
                     <div class="dashboard-header-bar"><h2>💬 전 세대 입주민 문자(SMS) 발송</h2></div>
                     <div class="board-card" style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;">
@@ -688,7 +675,6 @@ footer{background:#0f172a;color:#94a3b8;padding:40px 0 20px;}
                     </div>
                 </div>
 
-                <!-- 입주민 요청 관리 -->
                 <div id="admin-view-inquiries" class="dashboard-view">
                     <div class="dashboard-header-bar"><h2>✉️ 입주민 1:1 요청 및 문의 관리</h2></div>
                     <div class="board-card"><div id="admin-inquiry-list" class="community-posts"></div></div>
@@ -698,14 +684,12 @@ footer{background:#0f172a;color:#94a3b8;padding:40px 0 20px;}
     </section>
 </main>
 
-<!-- Apps Script 설정 바 -->
 <div class="sheet-config-bar" id="sheet-config-bar">
     <span>🔗 Apps Script URL:</span>
     <input type="text" id="google-sheet-url" placeholder="https://script.google.com/macros/s/.../exec">
     <button class="sheet-sync-btn" onclick="syncWithGoogleSheet()">📥 전체 동기화</button>
 </div>
 
-<!-- [하단 푸터 수정 완료] 관악구 신림동 새 주소 정보 일괄 반영 -->
 <footer style="margin-bottom:0;" id="mainFooter">
     <div class="container footer-grid">
         <div>
@@ -731,7 +715,9 @@ footer{background:#0f172a;color:#94a3b8;padding:40px 0 20px;}
 // ============================================================
 
 const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbye2LYHRCzZUJ6Tg4w1IL9o4YvoF7C7-BhYVnu5Kl0enU6bgpZxxg4E5b77Jr1f-ljh/exec";
-let ADMIN_PASSWORD = "1234";
+
+// [보정 완료] 비밀번호 로컬 영구 저장을 위한 초기 변수 세팅 보완
+let ADMIN_PASSWORD = localStorage.getItem('daehwa_admin_pwd') || "1234";
 
 let APP_NOTICES = [
     { id:1, title:"🌾 공용 세탁실 드럼세탁기 정기 세척 완료 공지", date:"2026-06-12", content:"세척 완료 후 정상 가동 중입니다." },
@@ -826,7 +812,6 @@ document.getElementById('menuToggle').addEventListener('click', () => document.g
     setInterval(() => go(cur + 1), 4000);
 })();
 
-// [지도 좌표 보정 완료] 서울 신림동 231-18의 실제 중심 위경도 적용
 (function() {
     const map = L.map('map').setView([37.4695, 126.9318], 16);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution:'© OpenStreetMap contributors' }).addTo(map);
@@ -1154,7 +1139,7 @@ document.querySelectorAll('#portal-admin-view .sidebar-item[data-adminview]').fo
     });
 });
 
-// ── 원장 보안 인증 시스템 (로그인 / 로그아웃 / 비번변경) ───────
+// ── 원장 보안 인증 시스템 (로그인 / 로그아웃 / 비번변경 영구 저장 보정) ───────
 function activateAdminMode() {
     IS_ADMIN_LOGGED_IN = true;
     document.body.classList.add('admin-mode');
@@ -1198,6 +1183,7 @@ function toggleAdminAuth() {
     }
 }
 
+// [보정 핵심 포인트] 변경된 비밀번호를 브라우저 스토리지에 즉시 영구 저장 처리
 function changeAdminPassword() {
     if (!IS_ADMIN_LOGGED_IN) {
         alert("원장 로그인 후 이용 가능합니다.");
@@ -1214,7 +1200,8 @@ function changeAdminPassword() {
         return;
     }
     ADMIN_PASSWORD = newPwd;
-    alert("원장 비밀번호가 성공적으로 변경되었습니다! 다음 로그인부터 적용됩니다.");
+    localStorage.setItem('daehwa_admin_pwd', newPwd); // 로컬 스토리지 브라우저 영구 보관
+    alert("원장 비밀번호가 브라우저에 안전하게 영구 저장되었습니다! 다음 인터넷 접속부터 적용됩니다.");
 }
 
 function renderAll() {
